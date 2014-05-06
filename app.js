@@ -37,6 +37,7 @@ var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
+// To test if socket io is configured, open http://localhost:3000/socket.io/ in browser
 io = require('socket.io').listen(server);
 
 //io.configure(function () {
@@ -48,5 +49,7 @@ io.sockets.on('connection', function (socket) {
   socket.emit('news', { hello: 'world' });
   socket.on('my other event', function (data) {
     console.log(data);
+    // publish to all clients
+    io.sockets.emit('news', data);
   });
 });

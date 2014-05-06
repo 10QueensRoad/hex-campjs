@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2fbd5da-8232-4c1c-9187-315e05f9db89" name="Default" comment="Do not use websocket on heroku.&#10;&#10;io.configure(function () { &#10;  io.set(&quot;transports&quot;, [&quot;xhr-polling&quot;]); &#10;  io.set(&quot;polling duration&quot;, 10); &#10;});">
+    <list default="true" id="b2fbd5da-8232-4c1c-9187-315e05f9db89" name="Default" comment="Enabled websockets on heroku.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hex-campjs.iws" afterPath="$PROJECT_DIR$/hex-campjs.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="hex-campjs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="721">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="737">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -70,8 +71,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54008436" vertical-offset="400" max-vertical-offset="1274">
-              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.6941432" vertical-offset="496" max-vertical-offset="1309">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -526,7 +527,7 @@
       <created>1399370673908</created>
       <updated>1399370673908</updated>
       <workItem from="1399370684832" duration="2255000" />
-      <workItem from="1399373769240" duration="4407000" />
+      <workItem from="1399373769240" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="Initial revision">
       <created>1399371112409</created>
@@ -536,11 +537,19 @@
       <created>1399378430908</created>
       <updated>1399378430908</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Do not use websocket on heroku.&#10;&#10;http://servertroubles.blogspot.com.au/2012/10/socketio-cannot-connect-to-server-heroku.html&#10;&#10;io.configure(function () { &#10;  io.set(&quot;transports&quot;, [&quot;xhr-polling&quot;]); &#10;  io.set(&quot;polling duration&quot;, 10); &#10;});">
+      <created>1399379559317</created>
+      <updated>1399379559317</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Enabled websockets on heroku.">
+      <created>1399380011996</created>
+      <updated>1399380011996</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6662000" />
+    <option name="totallyTimeSpent" value="8077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="22" width="907" height="839" extended-state="0" />
@@ -591,7 +600,9 @@
     </option>
     <MESSAGE value="Initial revision" />
     <MESSAGE value="Simple socket io interaction." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple socket io interaction." />
+    <MESSAGE value="Do not use websocket on heroku.&#10;&#10;http://servertroubles.blogspot.com.au/2012/10/socketio-cannot-connect-to-server-heroku.html&#10;&#10;io.configure(function () { &#10;  io.set(&quot;transports&quot;, [&quot;xhr-polling&quot;]); &#10;  io.set(&quot;polling duration&quot;, 10); &#10;});" />
+    <MESSAGE value="Enabled websockets on heroku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled websockets on heroku." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -621,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="721">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1120" max-vertical-offset="6348">
@@ -645,10 +648,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="737">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54008436" vertical-offset="400" max-vertical-offset="1274">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.6941432" vertical-offset="496" max-vertical-offset="1309">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
           <folding />
         </state>
       </provider>
